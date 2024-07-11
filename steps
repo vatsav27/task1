@@ -1,0 +1,23 @@
+TASK ONE: DEPLOYING A WEB APPLICATION ON AWS
+  STEP ONE: Logging in to AWS console.
+  STEP TWO: 
+    •	Here I chose " Ubuntu Server 24.04 LTS (HVM), EBS General Purpose (SSD) Volume Type " as AMI.
+    •	The instance type is “t2.micro”.
+    •	Configure the Instance Details. You can use the default settings.
+    •	Add Storage. The default 8 GB should be enough for a simple web application.
+    •	Adding Tags is optional.
+    •	Configuring the Security Group is very essential. Create a new security group that allows HTTP (port 80) and SSH (port 22) traffic.
+    •	I have used an existing keypair. This key pair is used to access your instance via SSH.
+    •	After these steps we can launch the instance.
+ STEP THREE:
+    •	This step involves connecting the EC2 instance.
+ STEP FOUR:
+ This step involves installing the webserver into it. We use the following commands – 
+    •	sudo apt update
+    •	sudo apt install apache2
+    •	sudo systemctl start apache2
+    •	sudo systemctl enable apache2
+    •	sudo systemctl status apache2
+ STEP FIVE:
+ This step invloves deploying web application
+    

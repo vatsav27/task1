@@ -19,5 +19,19 @@ TASK ONE: DEPLOYING A WEB APPLICATION ON AWS
     •	sudo systemctl enable apache2
     •	sudo systemctl status apache2
  STEP FIVE:
- This step invloves deploying web application
+ This step invloves deploying web application.
+    •	We’ll go into /var/www/html
+    •	For this we use cd /var/www/html
+    •	Then we use index.html file present there.
+    •	The code for the index.html file is mentioned in separate file.
+    •	Open a web browser and enter the public IP address of your EC2 instance top access the web application. 
+ STEP SIX: 
+ Configure Security Groups (if needed)
+    •	Open Additional Ports (if your application requires other ports, like HTTPS):
+    •	Go to the EC2 Dashboard, select your instance, and click "Security Groups" in the Description tab.
+    •	Edit the inbound rules to add any additional ports required.
+
+
+
+
     
